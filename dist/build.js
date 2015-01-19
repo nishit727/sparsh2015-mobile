@@ -1,0 +1,1 @@
+({appDir:"./",baseUrl:"js",dir:"dist",name:"main",mainConfigFile:"js/main.js",optimizeCss:"standard",removeCombined:!0,preserveLicenseComments:!0});

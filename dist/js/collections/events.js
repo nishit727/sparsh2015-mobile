@@ -1,0 +1,1 @@
+define(["backbone","eventmodel","eventsdata"],function(e,t,n){var r=e.Collection.extend({model:EventsModel}),s=[];for(var o=0,u=n.length;o<u;o++)s.push(new t(n[i]));return r.add(s),r});

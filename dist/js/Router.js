@@ -1,0 +1,1 @@
+define(["backbone"],function(e){var t=function(){console.log("asdf")};return{log:t}});

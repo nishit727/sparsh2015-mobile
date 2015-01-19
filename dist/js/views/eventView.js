@@ -1,0 +1,1 @@
+define(["backbone","tmpl","events"],function(e,t,n){var r=e.View.extend({el:document.getElementById("events-container"),collection:n,tmpl:document.getElementById("event-template").innerHTML,initialize:function(){this.render()},render:function(){t(tmpl,data)}})});

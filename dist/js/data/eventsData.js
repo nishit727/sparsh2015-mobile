@@ -1,0 +1,1 @@
+define([],function(){var e=[{type:"Dummy Type 1",name:"Dummy Event 1",description:"<h1>This rocks!</h1>",dates:"Undefined"},{type:"Dummy Type 2",name:"Dummy Event 2",description:"<h1>This sucks!</h1>",dates:"Undefined"}];return e});
