@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html manifest="sparsh.appcache">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="author" content="Sukant Garg (:gargsms)" />
+		<meta charset="utf-8">
+		<title>
+			Sparsh 2015 || The Annual Techno-Cultural Festival of SVNIT
+		</title>
+
+		<!-- Styles :( -->
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<!-- Modular website structure. Everything relies on RequireJS modules -->
+		
+		<!-- If the user has big enough screen, ask them if they want to
+			 go to the desktop website instead. -->
+		<div id="remind">
+			<a href="http://www.svnit-sparsh.net">Go to the desktop website</a>
+			<span id="dismiss"><sup>&nbsp;x</sup></span>
+		</div>
+
+		<div id="fixed-top">
+			<span id="logo"></span>
+			<span id="banner" class="hide">Sparsh 2015</span>
+			<span id="tweet"></span>
+		</div>
+
+		<div id="navigation"></div>
+
+		<!-- Leave 70px empty on the top in each section :/ -->
+		<section id="intro">
+			<div class="clearfill"></div>
+			<div id="big-logo" class="imgs"></div>
+			<div class="text" style="color: #fff">
+				<center>The Techno - Cultural Fest</center>
+			</div>
+		</section>
+
+		<section id="events">
+			<div class="clearfill"></div>
+			<!-- Add or remove clearfills as per need -->
+			<div class="clearfill"></div>
+			<div class="text">
+				<h3 class="center">Events</h3>
+				<!-- REPLACE ME -->
+				Get thrilled beyond measure.
+				<br />
+				<big>And I thought my jokes were bad.</big>
+
+				<br />
+				<small>See more >></small>
+			</div>
+			<div id="event-view"></div>
+		</section>
+
+		<section id="singing">
+			<div class="clearfill"></div>
+			<div id="singing-img" class="imgs"></div>
+			<div class="text">
+				<h3 class="center">'Goonj' Singing Night</h3>
+
+				Where words fail, music speaks. Hindustani, Classical, Symphony, Orchestra, Opera, Heavy Metal, Punk rock. You name it, you get it. This is the night when the entire college congregates to witness magic unfold before their eyes.
+
+				BLAHHHHHHH
+			</div>
+		</section>
+
+		<section id="dancing">
+			<div class="clearfill"></div>
+			<div id="dancing-img" class="imgs"></div>
+			<div class="text">
+				<h3 class="center">'Macarena' Dancing Night</h3>
+
+				From Bharatnatyam in the south to Bhangra in the North; Garba in the west to Chauu in the East. Also mired in the concoctionwe have western dancing styles like hip-hop, salsa , jazz, boogie and rumba where the students bring out the essence of various cultures through their dances.
+
+				BURPPPPPP
+			</div>
+		</section>
+
+		<section id="fashion">
+			<div class="clearfill"></div>
+			<div id="fashion-img" class="imgs"></div>
+			<div class="text">
+				<h3 class="center">‘Panache’ Fashion Night</h3>
+
+				It is one of the most awaited nights in the Sparsh, where students get a chance to oomph up the glamour quotient on the ramp. This night gives you the perfect amalgam of beauty and brains.
+
+				LOLOLOL
+			</div>
+		</section>
+
+		<section id="celeb">
+			<div class="clearfill"></div>
+			<div id="celeb-img" class="imgs"></div>
+			<div class="text">
+				<h3 class="center">'Grande Sinfona' Celebrity Night</h3>
+
+				I was too lazy to copy any more text.
+
+				TEEHEE
+			</div>
+		</section>
+
+		<section id="social">
+			<div class="clearfill"></div>
+			<div id="social-img" class="imgs"></div>
+			<div class="text">
+				<h3 class="center">Social Causes</h3>
+
+				Pffft Whatever
+
+				:/
+			</div>
+		</section>
+
+		<section id="contacts"></section>
+
+		<section id="ca">
+			<div class="clearfill"></div>
+			<div id="ca-img" class="imgs"></div>
+			<div class="text">
+				<h3 class="center">Campus Ambassador</h3>
+
+				Laziness Redefined
+
+				:/
+			</div>
+		</section>
+
+		<script type="text/micro" id="navigation-template">
+			<a href="#{{hash}}">
+				<span class="navigation-item" style="{{style}}">
+					{{text}}
+				</span>
+				<span class="filler"></span>
+			</a>
+		</script>
+
+		<script type="text/micro" id="event-template">
+			<div class="event-type">
+				{{type}}
+			</div>
+		</script>
+
+		<script type="text/micro" id="contact-template">
+			<div class="contact text">
+				<div class="contacts-img imgs {{dir}}" style="{{style}}"></div>
+				<div class="{{opposite}}">
+					<span class="clearfix"></span>
+					<span class="contact-name">{{name}}</span>
+					<span class="contact-designation">{{designation}}</span>
+					<a href="tel:{{tel}}">
+						<span class="contact-tel">{{tel}}</span>
+					</a>
+				</div>
+			</div>
+		</script>
+
+		<!-- Scripts loaded using RequireJS -->
+		<script type="text/javascript" data-main="js/main.js" src="js/require.js">
+		
+		</script>
+
+	</body>
+
+</html>
+<!-- Keep the computer happy with a newline at the end of file -->
