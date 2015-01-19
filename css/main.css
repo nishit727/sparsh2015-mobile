@@ -37,6 +37,22 @@ a {
 	color: inherit;
 }
 
+#loader {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 5000;
+	background: #224;
+}
+
+#loader img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+}
+
 #fixed-top {
 	position: fixed;
 	top: 0;

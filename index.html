@@ -16,6 +16,10 @@
 	</head>
 
 	<body>
+		<div id="loader">
+			<img src="assets/guinea-loader.gif" />
+		</div>
+
 		<!-- Modular website structure. Everything relies on RequireJS modules -->
 		
 		<!-- If the user has big enough screen, ask them if they want to
@@ -165,6 +169,12 @@
 		<!-- Scripts loaded using RequireJS -->
 		<script type="text/javascript" data-main="js/main.js" src="js/require.js">
 		
+		</script>
+
+		<script type="text/javascript">
+			window.onload = function () {
+				document.getElementById('loader').className = 'hide';
+			}
 		</script>
 
 	</body>
