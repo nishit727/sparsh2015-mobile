@@ -21,9 +21,9 @@ require(['tmpl',  'tap', 'data/navData', 'data/contactsData'], function (Tmpl, T
 	// Make the $ function
 	var $ = function (args) {
 		// args is a string, either as id or as class
-		if(args.startsWith('#'))
+		if(args.substring(0,1) === '#')
 			return document.getElementById(args.substring(1));
-		else if(args.startsWith('.'))
+		else if(args.substring(0,1) === '.')
 			return document.getElementsByClassName(args.substring(1));
 		return null;
 	}
